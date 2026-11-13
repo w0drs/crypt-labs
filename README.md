@@ -131,9 +131,3 @@ python main.py permutation decrypt --text "xaxb" --key "3,1,4,2" --original-leng
 ```bash
 python main.py --help
 ```
-
-## Запуск тестов
-
-```bash
-python -m unittest discover -v
-```
