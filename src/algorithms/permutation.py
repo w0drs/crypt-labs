@@ -58,6 +58,5 @@ class PermutationCipher(EncoderDecoderClass):
             if padding_text != self.padding * padding_count:
                 raise ValueError("После исходного текста должен находиться только заполнитель")
 
-            # Не используем rstrip: настоящий текст тоже может заканчиваться на x
             plaintext = plaintext[:original_length]
         return plaintext
