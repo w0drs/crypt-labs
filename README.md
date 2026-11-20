@@ -158,24 +158,6 @@ assert cipher.decrypt(encrypted, 0xBEEF) == "Привет!"
 assert cipher.decrypt_block(cipher.encrypt_block(0x1234, 0xBEEF), 0xBEEF) == 0x1234
 ```
 
-Отчет с таблицами экспериментов и ответами на вопросы: [Word](reports/lab2.docx),
-[Markdown](reports/lab2.md). Перед сдачей заполните ФИО и группу на титульном листе.
-Пошаговое объяснение алгоритма: [docs/feistel.md](docs/feistel.md).
-
-Для пересоздания Word-отчета из Markdown:
-
-```bash
-python -m pip install python-docx Markdown
-python scripts/export_report.py
-```
-Ячейки лабораторной № 2 добавлены в конец `examples.ipynb`.
-
-Тесты не требуют дополнительных библиотек:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
 ### Справка
 
 ```bash
